@@ -1,5 +1,16 @@
+/* <uniquifier>: Use a unique and descriptive class name
+/* <weight>: Use a value from 100 to 700 
+
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
 * {
     background-color: #01010f;
+    font-family: "Josefin Sans", serif;
 }
 
 nav {
@@ -8,4 +19,31 @@ nav {
     box-shadow: 0px 0px 30px rgba(244, 243, 239, 0.37);
     border: 2px solid #eedd91;
     border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 100;
+    font-style: normal;
 }
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5rem;
+
+}
+
+a {
+
+    padding: 0rem 2rem;
+    color: #eedd91;
+    text-decoration: none;
+}
+
+a:hover {
+
+    text-decoration: underline;
+}
+
