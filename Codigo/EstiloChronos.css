@@ -47,3 +47,24 @@ a:hover {
     text-decoration: underline;
 }
 
+header {
+
+    background-image: ;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+
+    font-weight: 900;
+    font-style: normal;
+    font-size: 16rem;
+    color: #eedd91;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    
+}
