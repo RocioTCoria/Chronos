@@ -31,9 +31,35 @@
         </ul>
     </nav>
 
-    <header> 
+<section id="AgregarHistoria"> 
 
-    </header>
+    <h1>Contáme</h1>
+    <p>¿Conocés un evento interesante que marcó la historia o el entretenimiento? ¡Compártelo con nosotros!</p>
+    
+    <form id="eventForm">
+        <label for="title">Título del Evento</label>
+        <input type="text" id="title" name="title" placeholder="Ejemplo: Lanzamiento del primer iPhone" required>
+    
+        <label for="date">Fecha del Evento</label>
+        <input type="date" id="date" name="date" required>
+    
+        <label for="category">Categoría</label>
+        <select id="category" name="category" required>
+            <option value="historico">Histórico</option>
+            <option value="entretenimiento">Entretenimiento</option>
+            <option value="otro">Otro</option>
+        </select>
+    
+        <label for="description">Descripción</label>
+        <textarea id="description" name="description" rows="5" placeholder="Contanos más detalles sobre este evento..." required></textarea>
+    
+        <label for="image">Foto característica del evento</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+    
+        <button type="submit">Enviar Evento</button>
+    </form>
+
+</section>
 
 
 

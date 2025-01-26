@@ -76,12 +76,12 @@ header h1 {
 
 }
 
-#Quieneschronos h2 {
+#Quieneschronos h1 {
 
     font-weight: 900;
     font-style: normal;
     font-size: 6rem;
-    color: #eedd91;
+    color: #FFD700;
     display: flex;
 }
 
@@ -89,7 +89,56 @@ header h1 {
 
     font-weight: 300;
     font-style: normal;
-    font-size: 2rem;
+    font-size: rem;
     color: #eedd91;
     display: flex;
+}
+
+/* CONTÁME */
+
+#AgregarHistoria {
+
+    margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+}
+
+#AgregarHistoria h1 {
+
+    font-weight: 900;
+    font-style: normal;
+    font-size: 6rem;
+    color: #FFD700;
+    display: flex;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin: 15px 0 5px;
+}
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: #45a049;
 }
