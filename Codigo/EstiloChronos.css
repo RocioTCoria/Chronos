@@ -68,3 +68,28 @@ header h1 {
     justify-self: center;
     
 }
+
+/* QUIEN ES CHRONOS */
+
+#Quieneschronos {
+
+
+}
+
+#Quieneschronos h2 {
+
+    font-weight: 900;
+    font-style: normal;
+    font-size: 6rem;
+    color: #eedd91;
+    display: flex;
+}
+
+#Quieneschronos p {
+
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    color: #eedd91;
+    display: flex;
+}
