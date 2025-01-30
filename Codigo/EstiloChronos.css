@@ -106,8 +106,7 @@ header h1 {
 #AgregarHistoria {
 
     margin: 20px;
-            background-color: #f9f9f9;
-            color: #333;
+    color: var(--texto-parrafo);
 }
 
 #AgregarHistoria h1 {
@@ -117,35 +116,46 @@ header h1 {
     font-size: 6rem;
     color: var(--color-principal);
     display: flex;
+    margin: 0;
+}
+
+#AgregarHistoria p {
+
+    margin: 0;
 }
 
 form {
+
     max-width: 600px;
     margin: auto;
-    background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 label {
-    font-weight: bold;
+
+    font-weight: normal;
     display: block;
-    margin: 15px 0 5px;
+    margin: 25px 0 10px;
 }
+
 input, textarea, select, button {
+
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 button {
+    
     background-color: #4CAF50;
     color: white;
     font-size: 16px;
     cursor: pointer;
     border: none;
 }
+
 button:hover {
     background-color: #45a049;
 }
@@ -163,6 +173,17 @@ footer {
     text-align: center;
     justify-content: end;
     float: right;
+}
+
+#ColumnaIzquierda {
+
+    display: flex;
+}
+
+#ColumnaIzquierda li {
+
+    padding: 10px 0px;
+    list-style: none;
 }
 
 footer img {
