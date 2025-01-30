@@ -13,6 +13,12 @@
     font-family: "Josefin Sans", serif;
 }
 
+:root {
+
+    --color-principal: #ffd700;
+}
+
+
 nav {
 
     backdrop-filter: blur(30px);
@@ -62,7 +68,7 @@ header h1 {
     font-weight: 900;
     font-style: normal;
     font-size: 16rem;
-    color: #eedd91;
+    color: var(--color-principal);
     display: flex;
     align-self: center;
     justify-self: center;
@@ -81,7 +87,7 @@ header h1 {
     font-weight: 900;
     font-style: normal;
     font-size: 6rem;
-    color: #FFD700;
+    color: var(--color-principal);
     display: flex;
 }
 
@@ -90,7 +96,7 @@ header h1 {
     font-weight: 300;
     font-style: normal;
     font-size: rem;
-    color: #eedd91;
+    color: var(--color-principal);
     display: flex;
 }
 
@@ -108,7 +114,7 @@ header h1 {
     font-weight: 900;
     font-style: normal;
     font-size: 6rem;
-    color: #FFD700;
+    color: var(--color-principal);
     display: flex;
 }
 
@@ -141,4 +147,12 @@ button {
 }
 button:hover {
     background-color: #45a049;
+}
+
+/* FOOTER */
+
+footer img {
+
+    width: 20%;
+    height: auto;
 }
