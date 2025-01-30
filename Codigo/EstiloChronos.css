@@ -16,6 +16,7 @@
 :root {
 
     --color-principal: #ffd700;
+    --texto-parrafo: #ffff4a;
 }
 
 
@@ -95,8 +96,8 @@ header h1 {
 
     font-weight: 300;
     font-style: normal;
-    font-size: rem;
-    color: var(--color-principal);
+    font-size: 1.2rem;
+    color: var(--texto-parrafo);
     display: flex;
 }
 
@@ -151,8 +152,27 @@ button:hover {
 
 /* FOOTER */
 
+footer {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#ColumnaDerecha {
+
+    text-align: center;
+    justify-content: end;
+    float: right;
+}
+
 footer img {
 
     width: 20%;
     height: auto;
+}
+
+footer p {
+
+    color: var(--texto-parrafo);
+    margin: 0;
 }
