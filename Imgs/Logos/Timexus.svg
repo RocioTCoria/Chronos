@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 781.16 919.9">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 5px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: gold;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #fffde6;
+      }
+
+      .cls-4 {
+        fill: #fff680;
+      }
+
+      .cls-5 {
+        fill: #fffef3;
+      }
+
+      .cls-2 {
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <g>
+        <polygon class="cls-4" points="771.59 4 561.84 254.36 561.83 254.36 217.34 254.36 7.57 4 771.59 4"/>
+        <polygon class="cls-4" points="389.58 459.95 771.59 915.9 7.57 915.9 389.58 459.95"/>
+        <polygon class="cls-3" points="561.83 254.36 389.58 459.95 217.34 254.36 561.83 254.36"/>
+      </g>
+      <g>
+        <line class="cls-1" x1="217.34" y1="254.36" x2="389.58" y2="459.95"/>
+        <line class="cls-1" x1="389.58" y1="459.95" x2="561.83" y2="254.36"/>
+        <polygon class="cls-1" points="389.58 459.95 771.59 915.9 7.57 915.9 389.58 459.95"/>
+        <polygon class="cls-1" points="561.83 254.36 217.34 254.36 7.57 4 771.59 4 561.84 254.36 561.83 254.36"/>
+      </g>
+    </g>
+    <path class="cls-5" d="M17.83,905.8l373.83-199.87,369.81,199.88c2.67,1.44,1.64,5.47-1.4,5.47H19.21c-3.04,0-4.07-4.05-1.39-5.48Z"/>
+  </g>
+  <polygon class="cls-5" points="214.66 249.95 565.87 249.95 390.26 459.54 214.66 249.95"/>
+  <g>
+    <polygon class="cls-2" points="390.58 459.95 772.59 4 8.57 4 390.58 459.95"/>
+    <polygon class="cls-2" points="390.58 459.95 772.59 915.9 8.57 915.9 390.58 459.95"/>
+  </g>
+</svg>
