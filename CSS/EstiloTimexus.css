@@ -118,7 +118,10 @@ a:hover {
 
 /* EVENTOS */
 
+#Eventos {
 
+    background-color: var(--color-fondo);
+}
 
 /* QUIEN ES TIMEXUS */
 
