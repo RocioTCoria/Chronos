@@ -476,16 +476,6 @@ if($debug==true)
 $pageTimer = new MicroTimer();
 
 // load language file
-if($language != 'en') {
- 	$temp_lang=$lang;
-	if(is_file('languages/lang_'.$language.'.php'))
-		include('languages/lang_'.$language.'.php');
-	elseif(is_file('lang_'.$language.'.php'))
-		include('lang_'.$language.'.php');
-	$lang = array_merge($temp_lang, $lang);
-	unset($temp_lang);
-}
-
 // stripslashes if MAGIC QUOTES is turned on
 // This is only a workaround. Please better turn off magic quotes!
 // This code is from http://php.net/manual/en/security.magicquotes.disabling.php
