@@ -476,25 +476,19 @@ if($debug==true)
 $pageTimer = new MicroTimer();
 
 // load language file
+if($language != 'en') {
+ 	$temp_lang=$lang;
+	if(is_file('languages/lang_'.$language.'.php'))
+		include('languages/lang_'.$language.'.php');
+	elseif(is_file('lang_'.$language.'.php'))
+		include('lang_'.$language.'.php');
+	$lang = array_merge($temp_lang, $lang);
+	unset($temp_lang);
+}
+
 // stripslashes if MAGIC QUOTES is turned on
 // This is only a workaround. Please better turn off magic quotes!
 // This code is from http://php.net/manual/en/security.magicquotes.disabling.php
-// if (get_magic_quotes_gpc()) {
-//	$process = array(&$_GET, &$_POST, &$_COOKIE, &$_REQUEST);
-//	while (list($key, $val) = each($process)) {
-//		foreach ($val as $k => $v) {
-//			unset($process[$key][$k]);
-//			if (is_array($v)) {
-//				$process[$key][stripslashes($k)] = $v;
-//				$process[] = &$process[$key][stripslashes($k)];
-//			} else {
-//				$process[$key][stripslashes($k)] = stripslashes($v);
-//			}
-//		}
-//	}
-//	unset($process);
-//}
-
 
 //data types array
 $sqlite_datatypes = array("INTEGER", "REAL", "TEXT", "BLOB","NUMERIC","BOOLEAN","DATETIME");
