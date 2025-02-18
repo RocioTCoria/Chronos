@@ -1,3 +1,10 @@
+<?php
+include("E:/Proyectos GitHub/Timexus/Base/conexion.php");
+
+$sql = "SELECT * FROM EventosdelTiempo ORDER BY fecha DESC";
+$resultado = $conexion->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +57,20 @@
 
     <section id="Eventos">
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium necessitatibus dolorem dicta accusamus, veniam repellendus rem ratione repellat! Esse tempora nam adipisci libero dolorem, deleniti aut consectetur non labore enim?</p>
+    <?php
+    if ($resultado->num_rows > 0) {
+        while ($fila = $resultado->fetch_assoc()) {
+            echo "<div class='evento'>";
+            echo "<h2>" . htmlspecialchars($fila["titulo"]) . "</h2>";
+            echo "<p><strong>Fecha:</strong> " . $fila["fecha"] . "</p>";
+            echo "<p>" . nl2br(htmlspecialchars($fila["descripcion"])) . "</p>";
+            echo "<img src='" . htmlspecialchars($fila["foto"]) . "' alt='Imagen del evento'>";
+            echo "</div>";
+        }
+    } else {
+        echo "<p>No hay eventos registrados.</p>";
+    }
+    ?>
 
     </section>
 
