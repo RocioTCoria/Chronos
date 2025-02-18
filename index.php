@@ -60,11 +60,15 @@ $resultado = $conexion->query($sql);
     <?php
     if ($resultado->num_rows > 0) {
         while ($fila = $resultado->fetch_assoc()) {
-            echo "<div class='evento'>";
+            echo "<div class='TodoslosEventos'>";
+
             echo "<h2>" . htmlspecialchars($fila["titulo"]) . "</h2>";
-            echo "<p><strong>Fecha:</strong> " . $fila["fecha"] . "</p>";
+
+            echo "<h3><strong>Fecha:</strong> " . $fila["fecha"] . "</h3>";
+
             echo "<p>" . nl2br(htmlspecialchars($fila["descripcion"])) . "</p>";
-            echo "<img src='" . htmlspecialchars($fila["foto"]) . "' alt='Imagen del evento'>";
+            echo "<img src='" . htmlspecialchars($fila["foto"]) . "' alt='Imagen del evento' 'title='Evento pasado'>";
+            
             echo "</div>";
         }
     } else {
